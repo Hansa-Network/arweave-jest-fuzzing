@@ -1,7 +1,8 @@
 global.fuzz = global.fuzz || {};
 
+// TODO: change this into a single test
 function fuzzTest(name, fuzzer, testRunner) {
-    const iterations = global.fuzz.iterations || 100;
+    const iterations = global.fuzz.iterations || 5000;
 
     const testCase = index => test(`${name} -> FUZZ-${index}`, () => testRunner(fuzzer()));
 
@@ -10,4 +11,4 @@ function fuzzTest(name, fuzzer, testRunner) {
     }
 }
 
-module.exports = fuzzTest;
+export default fuzzTest;

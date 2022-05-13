@@ -1,9 +1,9 @@
-const test = require('./src/fuzzTest');
-const fuzzers = require('./src/fuzzers');
-const Fuzzer = require('./src/Fuzzer');
+import fuzz from './src/fuzzTest';
+import fuzzers from './src/fuzzers';
+import Fuzzer from './src/Fuzzer';
 
 module.exports = {
-    test,
+    fuzz,
     Fuzzer,
     ...fuzzers,
 };

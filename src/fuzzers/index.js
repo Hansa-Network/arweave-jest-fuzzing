@@ -1,8 +1,9 @@
-const string = require('./string');
-const int = require('./int');
-const float = require('./float');
-const bool = require('./bool');
-const array = require('./array');
+import string from './string';
+import int from './int';
+import float from './float';
+import bool from './bool';
+import array from './array';
+import wallet from './wallet';
 
 module.exports = {
     string,
@@ -10,4 +11,5 @@ module.exports = {
     float,
     bool,
     array,
+    wallet
 };

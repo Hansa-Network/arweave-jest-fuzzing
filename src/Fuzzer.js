@@ -25,4 +25,4 @@ function Fuzzer(generator) {
     }
 }
 
-module.exports = Fuzzer;
+export default Fuzzer;

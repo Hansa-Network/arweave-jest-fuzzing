@@ -1,6 +1,6 @@
-const Fuzzer = require('../Fuzzer');
-const { int } = require('../helper/numbers');
-const intFuzzer = require('./int');
+import Fuzzer from '../Fuzzer';
+import { int } from '../helper/numbers';
+import intFuzzer from './int';
 
 const defaultOptions = {
     type: intFuzzer(),

@@ -2,6 +2,7 @@
   "name": "smartweave-fuzzing",
   "version": "1.0.0",
   "description": "Jest based tools for fuzzing Redstone SmartWeave contracts.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
