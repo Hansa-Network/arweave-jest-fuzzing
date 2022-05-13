@@ -1,0 +1,27 @@
+{
+  "name": "smartweave-fuzzing",
+  "version": "1.0.0",
+  "description": "Jest based tools for fuzzing Redstone SmartWeave contracts.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "SmartWeave",
+    "RedStone",
+    "ArWeave",
+    "fuzzing",
+    "smart",
+    "contracts"
+  ],
+  "jest": {
+    "verbose": false
+  },
+  "author": "jboetticher",
+  "license": "MIT",
+  "dependencies": {
+    "arlocal": "^1.1.30",
+    "arweave": "^1.10.23",
+    "jest": "^27.5.1",
+    "lodash": "^4.17.21"
+  }
+}
