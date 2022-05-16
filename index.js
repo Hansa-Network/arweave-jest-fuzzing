@@ -1,9 +1,4 @@
 import fuzz from './src/fuzzTest';
-import fuzzers from './src/fuzzers';
-import Fuzzer from './src/Fuzzer';
+import * as fuzzers from './src/fuzzers';
 
-module.exports = {
-    fuzz,
-    Fuzzer,
-    ...fuzzers,
-};
+export { fuzz, ...fuzzers };
