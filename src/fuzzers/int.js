@@ -1,5 +1,5 @@
-const Fuzzer = require('../Fuzzer');
-const { int } = require('../helper/numbers');
+import Fuzzer from '../Fuzzer';
+import { int } from '../helper/numbers';
 
 const defaultOptions = {
     max: Infinity,
