@@ -102,6 +102,27 @@ The **options** parameter is an optional object:
 - **minLength**: The minimum length of the array (default = 1).
 - maxLength: The maximum length of the array (default = 300).
 
+### Custom Fuzzers
+
+You can create more complex fuzzers yourself with the `Fuzzer()` function.
+```javascript
+import { Fuzzer, Fuzzers } from 'arweave-jest-fuzzing`;
+
+const exampleFuzzer = Fuzzer({
+    exampleName: Fuzzers.string(),
+    exampleTokenAmount: Fuzzers. Fuzzers.int()
+});
+
+describe('Example test suite.', () => {
+    fuzz('Example test.', exampleFuzzer, data => {
+        expect(typeof(data.exampleName)).toBe('string');
+        expect(typeof(data.exampleTokenAmount)).toBe('number');
+        
+        // Write your test...
+    });
+});
+```
+
 ## Recommendations
 
 While the jest fuzzers run, by default jest provides limited information about the inputs
