@@ -3,7 +3,7 @@ import { int } from '../helper/numbers';
 
 const defaultOptions = {
     length: 125,
-    sufix: '',
+    suffix: '',
     prefix: '',
 };
 
@@ -20,5 +20,5 @@ module.exports = Fuzzer((random, options) => {
         ...options,
     };
 
-    return () => `${newOptions.prefix}${getString(random, newOptions.length)}${newOptions.sufix}`;
+    return () => `${newOptions.prefix}${getString(random, newOptions.length)}${newOptions.suffix}`;
 });

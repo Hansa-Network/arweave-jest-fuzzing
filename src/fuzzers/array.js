@@ -4,12 +4,12 @@ import intFuzzer from './int';
 
 const defaultOptions = {
     type: intFuzzer(),
-    length: 300,
+    maxLength: 300,
     minLength: 1,
 };
 
 function generateArray(random, options) {
-    const length = int(random, { min: options.minLength, max: options.length });
+    const length = int(random, { min: options.minLength, max: options.maxLength });
     const array = new Array(length).fill(0);
 
     return array.map(() => options.type());

@@ -26,7 +26,7 @@ async function testInvalidInputTypes(contract, dryWriteInput, wallet = null) {
         }
     }
 
-    // Fuzzes for errors
+    // Fuzzes for errors (unfinished)
     for (let entry of fuzzableEntries) {
         const inputCopy = deepClone(dryWriteInput);
         const curKey = entry[0];
