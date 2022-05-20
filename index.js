@@ -5,6 +5,7 @@ import float from   './src/fuzzers/float';
 import bool from    './src/fuzzers/bool';
 import array from   './src/fuzzers/array';
 import wallet from  './src/fuzzers/wallet';
+//import testInvalidInputTypes, { InputTypes } from './src/testInvalidInput';
 
 const Fuzzers = {
     string,
@@ -17,5 +18,7 @@ const Fuzzers = {
 
 export { 
     fuzz, 
-    Fuzzers
+    Fuzzers,
+    //testInvalidInputTypes,
+    //InputTypes
 };

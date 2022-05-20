@@ -7,13 +7,6 @@
  * @param {boolean} runAsync Whether or not to run the test async (default true).
  */
 function fuzzTest(name, fuzzer, testRunner, iterations = 100, runAsync = true) {
-    /*
-    const testCase = index => test(`${name} -> FUZZ-${index}`, () => testRunner(fuzzer()));
-    for (let i = 0; i < iterations; i += 1) {
-        describe(`FUZZ: ${name}`, testCase.bind(null, i));
-    }
-    */
-
     test(`FUZZ: ${name}`, async() => {
         for(let i = 0; i < iterations; i++) {
             if(runAsync) await testRunner(await fuzzer());
