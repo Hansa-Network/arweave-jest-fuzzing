@@ -106,7 +106,7 @@ The **options** parameter is an optional object:
 
 You can create more complex fuzzers yourself with the `Fuzzer()` function.
 ```javascript
-import { Fuzzer, Fuzzers } from 'arweave-jest-fuzzing`;
+import { Fuzzer, Fuzzers } from 'arweave-jest-fuzzing';
 
 const exampleFuzzer = Fuzzer({
     exampleName: Fuzzers.string(),
