@@ -10,7 +10,7 @@ function objectGenerator(object) {
     }, {});
 }
 
-function Fuzzer(generator) {
+module.exports = function Fuzzer(generator) {
     const { random } = Math;
 
     switch (typeof generator) {
@@ -24,5 +24,3 @@ function Fuzzer(generator) {
         throw new Error('Fuzzer cannot be loaded, it\'s not a function or an object');
     }
 }
-
-export default Fuzzer;

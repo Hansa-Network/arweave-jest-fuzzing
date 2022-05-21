@@ -16,4 +16,4 @@ function fuzzTest(name, fuzzer, testRunner, iterations = 100, runAsync = true) {
 
 }
 
-export default fuzzTest;
+module.exports = fuzzTest;

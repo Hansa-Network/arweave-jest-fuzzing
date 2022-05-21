@@ -1,10 +1,11 @@
-import fuzz from    './src/fuzzTest';
-import string from  './src/fuzzers/string';
-import int from     './src/fuzzers/int';
-import float from   './src/fuzzers/float';
-import bool from    './src/fuzzers/bool';
-import array from   './src/fuzzers/array';
-import wallet from  './src/fuzzers/wallet';
+const fuzz = require('./src/fuzzTest');
+const string = require('./src/fuzzers/string');
+const int = require('./src/fuzzers/int');
+const float = require('./src/fuzzers/float');
+const bool = require('./src/fuzzers/bool');
+const array = require('./src/fuzzers/array');
+const wallet = require('./src/fuzzers/wallet');
+const Fuzzer = require('./src/Fuzzer');
 //import testInvalidInputTypes, { InputTypes } from './src/testInvalidInput';
 
 const Fuzzers = {
@@ -16,9 +17,8 @@ const Fuzzers = {
     wallet
 };
 
-export { 
-    fuzz, 
+module.exports = {
+    fuzz,
     Fuzzers,
-    //testInvalidInputTypes,
-    //InputTypes
+    Fuzzer
 };

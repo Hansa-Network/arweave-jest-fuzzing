@@ -1,9 +1,9 @@
-import string from './fuzzers/string';
-import int from './fuzzers/int';
-import float from './fuzzers/float';
-import bool from './fuzzers/bool';
-import wallet from './fuzzers/wallet';
-import Arweave from 'arweave';
+const string    = require('./fuzzers/string');
+const int       = require('./fuzzers/int');
+const float     = require('./fuzzers/float');
+const bool      = require('./fuzzers/bool');
+const wallet    = require('./fuzzers/wallet');
+const Arweave   = require('arweave');
 
 const arweave = Arweave.init({});
 
@@ -84,4 +84,4 @@ function deepClone(src) {
     return target;
 }
 
-export default testInvalidInputTypes;
+//export default testInvalidInputTypes;

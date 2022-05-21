@@ -1,7 +1,7 @@
 {
-  "name": "smartweave-fuzzing",
-  "version": "1.0.0",
-  "description": "Jest based tools for fuzzing Redstone SmartWeave contracts.",
+  "name": "arweave-jest-fuzzing",
+  "version": "1.0.1",
+  "description": "A small package that extends fuzzing in jest for Arweave projects.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,5 +25,13 @@
     "jest": "^27.5.1",
     "jest-expect-message": "^1.0.2",
     "lodash": "^4.17.21"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hansa-Network/arweave-jest-fuzzing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hansa-Network/arweave-jest-fuzzing/issues"
+  },
+  "homepage": "https://github.com/Hansa-Network/arweave-jest-fuzzing"
 }
