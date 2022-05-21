@@ -114,7 +114,8 @@ const exampleFuzzer = Fuzzer({
 });
 
 describe('Example test suite.', () => {
-    fuzz('Example test.', exampleFuzzer, data => {
+    fuzz('Example test.', exampleFuzzer, dataFunc => {
+        const data = await dataFunc();
         expect(typeof(data.exampleName)).toBe('string');
         expect(typeof(data.exampleTokenAmount)).toBe('number');
         
