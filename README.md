@@ -130,8 +130,8 @@ While the jest fuzzers run, by default jest provides limited information about t
 provided in the fuzzer. For your tests, you may desire to use an extension like Matt Phillip's
 [jest-expect-message](https://github.com/mattphillips/jest-expect-message).
 
-It is suggested that fuzzing tests use a `dryWrite` to test for
-errors or proper changes.
+It is suggested that fuzzing tests use a `dryWrite` to test for errors or proper changes if 
+you are using RedStone contracts. Remember to adjust your logging level accordingly.
 
 ## Credits
 
