@@ -1,7 +1,8 @@
 # SmartWeave Fuzzing in Jest
 
 This package adds simple functions that help SmartWeave developers write fuzzing tests in
-jest.
+jest.  
+`npm install arweave-jest-fuzzing --save`
 
 ## Fuzz Test
 
